@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftGodot Showcase</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0f0f0f;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+        }
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.2);
+        }
+        header p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background: #1a1a1a;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card-content h2 {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .card-content p {
+            font-size: 1rem;
+            color: #c0c0c0;
+        }
+        .card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: 100%;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #121212;
+            color: #808080;
+            font-size: 0.9rem;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="fade-in">SwiftGodot Showcase</h1>
+        <p class="fade-in">A list of plugins and games using SwiftGodot.</p>
+    </header>
+
+    <section>
+        <h2 class="section-title">Games</h2>
+        <div class="cards-container">
+            <div class="card">
+                <a href="http://www.ztpawer.com/pit.html">
+                    <img src="https://www.ztpawer.com/wp-content/uploads/2025/01/pit.webp" alt="Game 1">
+                    <div class="card-content">
+                        <h2>Pang in Time</h2>
+                        <p>Blast bubbles through time! Pang In Time is a hilarious arcade adventure. Pop bubbles in wacky worlds with dinosaurs, spaceships & more!</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="http://www.ztpawer.com/je.html">
+                    <img src="https://www.ztpawer.com/wp-content/uploads/2025/01/je.webp" alt="Game 2">
+                    <div class="card-content">
+                        <h2>Jupiter Escape</h2>
+                        <p>Year 2578, after colonizing Callisto, the second largest moon of Jupiter, humans are facing an unexpected menace. Karlgrons, an intelligence live form the Orion's belt, approaches the solar system with the intention to reach the Hearth and conquer it.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Plugins</h2>
+        <div class="cards-container">
+            <div class="card">
+                <a href="https://github.com/zt-pawer/SwiftGodotIosPlugins">
+                    <img src="../images/SwiftGodot/github.jpg" alt="Project 1">
+                    <div class="card-content">
+                        <h2>Ios Plugins</h2>
+                        <p>A Swift implementation using the SwiftGodot framework of some the plugins for Godot.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://github.com/zt-pawer/SwiftGodotBasicPlugin-Tutorial">
+                    <img src="../images/SwiftGodot/github.jpg" alt="Project 2">
+                    <div class="card-content">
+                        <h2>BasicPlugin - Tutorial</h2>
+                        <p>A simple tutorial for implementing a GDExtension using SwiftGodot.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 SwiftGodot. All rights reserved. Built with passion and Swift.
+    </footer>
+</body>
+</html>

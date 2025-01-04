@@ -1,1 +1,151 @@
-<!doctype html><html lang="en-US" class="no-js"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="icon" href="/SwiftGodotDocs/favicon.ico"><link rel="mask-icon" href="/SwiftGodotDocs/favicon.svg" color="#333333"><title>SwiftGodot</title><script>var baseUrl = "/SwiftGodotDocs/"</script><script defer="defer" src="/SwiftGodotDocs/js/chunk-vendors.bdb7cbba.js"></script><script defer="defer" src="/SwiftGodotDocs/js/index.fbc552a9.js"></script><link href="/SwiftGodotDocs/css/index.3a335429.css" rel="stylesheet"></head><body data-color-scheme="auto"><noscript><style>.noscript{font-family:"SF Pro Display","SF Pro Icons","Helvetica Neue",Helvetica,Arial,sans-serif;margin:92px auto 140px auto;text-align:center;width:980px}.noscript-title{color:#111;font-size:48px;font-weight:600;letter-spacing:-.003em;line-height:1.08365;margin:0 auto 54px auto;width:502px}@media only screen and (max-width:1068px){.noscript{margin:90px auto 120px auto;width:692px}.noscript-title{font-size:40px;letter-spacing:0;line-height:1.1;margin:0 auto 45px auto;width:420px}}@media only screen and (max-width:735px){.noscript{margin:45px auto 60px auto;width:87.5%}.noscript-title{font-size:32px;letter-spacing:.004em;line-height:1.125;margin:0 auto 35px auto;max-width:330px;width:auto}}#loading-placeholder{display:none}</style><div class="noscript"><h1 class="noscript-title">This page requires JavaScript.</h1><p>Please turn on JavaScript in your browser and refresh the page to view its content.</p></div></noscript><div id="app"></div><a href="documentation/swiftgodot">Documentation</a><a href="tutorials/swiftgodot-tutorials/">Tutorials</a>Showcase</body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftGodot Showcase</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #0f0f0f;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.2);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #b0b0b0;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .card {
+            background: #1a1a1a;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h2 {
+            font-size: 1.5rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 1rem;
+            color: #c0c0c0;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            height: 100%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #121212;
+            color: #808080;
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="fade-in">SwiftGodot</h1>
+        <p class="fade-in">A framework to write Godot Game Extensions using the Swift Programming Language.
+        </p>
+    </header>
+    <section>
+        <div class="card">
+            <a href="tutorials/swiftgodot-tutorials/">
+                <img src="images/SwiftGodot/SwiftGodot%20Header.png" alt="Feature 2">
+                <div class="card-content">
+                    <h2>Tutorials</h2>
+                    <p>Learn the fundamentals of the SwiftGodot package and create an infinite runner game using Swift
+                        and Godot.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="documentation/swiftgodot">
+                <img src="images/SwiftGodot/documentation.jpg" alt="Feature 1">
+                <div class="card-content">
+                    <h2>Documentation</h2>
+                    <p>Official documentation.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <a href="showcase/">
+                <img src="images/SwiftGodot/showcase.webp" alt="Feature 3">
+                <div class="card-content">
+                    <h2>Showcase</h2>
+                    <p>A list of projects using SwiftGodot.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    <footer>
+        &copy; 2025 SwiftGodot. All rights reserved. Built with passion and Swift.
+    </footer>
+</body>
+
+</html>
